@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--heading text view-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text=" Telling the place of pincode"
+        android:textAlignment="center"
+        android:textColor="#DC143C"
+        android:textSize="40sp"
+        android:gravity="center_horizontal" />
+
+    <!-- edit text for entering our pin code
+        we are specifying input type as number-->
+    <EditText
+        android:id="@+id/idedtPinCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="please enter pin code"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <!--button to get the data from pin code-->
+
+    <!--text view to display the data
+        received from pin code-->
+
+    <Button
+        android:id="@+id/idBtnGetCityandState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="#008000"
+        android:text=" click here"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/idTVPinCodeDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
